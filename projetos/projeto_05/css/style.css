@@ -37,46 +37,56 @@ header nav.desktop ul{
 	list-style-type: none;
 }
 
-nav.mobile{
+
+header nav.desktop  ul li{
+	float: right;
+	font-size: 23px;
+	padding: 0 20px;
+	font-style: italic;
+}
+
+header nav.desktop ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+header nav.mobile{
 	display: none;
 	float: right;
 	width: 32px;
 	height: 32px;
 	background-size: 100% 100%;
 	background-image: url('../imagens/icon_menu.png');
-	margin-top: 40px;
 	cursor: pointer;
 }
 
-nav.mobile ul{
-	width: 100%;
+header nav.mobile ul{
+	display: none;
+	z-index: 999;
+	left: 0;
+	top: 130px;
 	position: absolute;
+	width: 100%;
 	text-align: center;
 	background-color: white;
+	
+	margin-top: 15px auto;
+	list-style: none;
+	border-bottom: 4px solid #EB2D2D;
+
 }
 
-nav.mobile li{
-	font-size: 23px;
-	padding: 20px;
+header nav.mobile li{
+	padding: 8px;
+	font-size: 20px;	
 	font-style: italic;
 }
 
-nav.mobile li a{
+header nav.mobile li a{
 	text-decoration: none;
 	color: black;
 }
 
-header nav ul li{
-	float: left;
-	font-size: 23px;
-	padding: 0 20px;
-	font-style:italic;
-}
-
-header nav ul li a{
-	color: black;
-	text-decoration: none;
-}
 
 section.banner{
 	width: 100%;
@@ -142,7 +152,7 @@ section.banner{
 	nav.desktop{
 		display:none;
 	}
-	nav.mobile{
+	header nav.mobile{
 		display:block;
 	}
 
