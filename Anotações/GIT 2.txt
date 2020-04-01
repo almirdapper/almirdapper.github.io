@@ -1,0 +1,163 @@
+ Git e Git HUB
+____________________________________________________________________
+-------------------configura primeiramente o acesso-------------------
+
+$ git config --global user.name "YOUR NAME"
+$ git config --global user.email "YOUR EMAIL ADDRESS"
+
+____________________________________________________________________
+-------------------Criar nova pasta-------------------
+(vc seleciona a pasta q vc esta e cria um arquivo)
+
+git init  (inicialiaza repositorio do zero)
+git clone (copia repositorio)
+
+____________________________________________________________________
+-------------Clonar um projeto-------------------
+
+git clone ''
+____________________________________________________________________
+-------------Adicionar Novas auteraçoes-------------------
+
+git status (verifica arquivos a ser adicionado eles aparecem em vermelho)
+
+git add . (adiciona todos os arquivos para ser comitado)
+
+git commit -m "coment�rio qualquer"  (comita e prepara para ser enviada)
+
+____________________________________________________________________
+-------------------Adicionar Para Repositorio -------------------
+
+sem clonar:
+
+git remote add origin https://github.com/almirdapper/teste2.git
+git push -u origin master
+
+ao clonar verifica :
+git remote -v 
+
+se o caminho e esse e apenas 
+git push -u origin master
+____________________________________________________________________
+-------------------Verificar Arquivos Alterados -------------------
+git diff HEAD~1
+
+comparar dois arquivos:
+
+git diff (codigo do commit) (codigo do commit)
+____________________________________________________________________
+-------------------navegar no reposiorio-------------------
+git log  pega o codigo do log
+git checkout codigo o log
+____________________________________________________________________
+-------------------desfazer auteracoes-------------------
+
+sem commit:
+git checkout -- pasta
+
+depois do commit:
+git checkout -- HEAD pasta
+
+ou 
+
+git revert codigo-log-do-comiit
+
+apagar o commit mas esse deve omar bastante cuidade:
+git reser --hard <comiit>
+____________________________________________________________________
+-------------------Trazer Alteraçoes para pasta local-------------------
+
+git pull
+
+ou 
+
+git fetch ( esse tras os arquivos mas não junta é preciso depois fazer um rebease ou merge)
+____________________________________________________________________
+-------------------Criar Novo Brach-------------------
+
+git checkout -b nova-branch
+____________________________________________________________________
+-------------------Subir novo Branch-------------------
+git push origin nova-branch
+____________________________________________________________________
+-------------------Alterar Para Novo branch-------------------
+git checkout master
+____________________________________________________________________
+-------------------voltar para branch anterior----------------
+git checkout -
+____________________________________________________________________
+-------------------remover branch local --------------------
+git branch -d branch
+____________________________________________________________________
+-------------------remover branch remota--------------------
+git push --delete origin branch
+____________________________________________________________________
+------------------juntar arquivos de branch-----------------
+git merge mastergigi
+
+
+git rebease (esse apaga o um commit e junta o outro depois colocoa novamente)
+
+para resolver conflito com git rebase vc entra no arquivo verifica o conflito
+resolve apos vc da um:
+
+git add
+
+git rebase --continue
+
+____________________________________________________________________
+
+------------------GIT TAG-----------------
+como se fosse uma branch ele cria um arquivo com os dados apartir daquele ponto
+mas diferente da branch ele não pode mais ser auterado (commit)
+serve para marcar versoes exemplo
+
+git tag v1.0
+
+ai sobe para diretorio 
+
+push -u origin v1.0
+
+____________________________________________________________________
+fork(copia um projeto do github para o seu para editar)
+
+Issues (bugs de seus projetos. Eles são como o email - exceto que podem ser compartilhados e 
+discutidos com o restante da sua equipe. A maioria dos projetos de software possui algum tipo 
+de rastreador de erros. O rastreador do GitHub é chamado de Issues  )
+
+____________________________________________________________________
+
+Checkout em Pull Request
+
+git fetch origin pull/ID/head:Branch(ela cria uma branch com os commits do pull request)
+
+____________________________________________________________________
+-------------------------.gitignore----------------------------
+notepad .gitignore
+
+arquivo que vc coloca os arquivos ou pastas q vc não quer que seja commitado
+eles são ignorados
+
+____________________________________________________________________
+----------------------------Git commit amend ----------------
+autera ultimo comiit
+
+____________________________________________________________________
+----------------git stash ---------------------------------
+quando quer mudar de branch e não recisar comitar
+
+git stash list (mosrta listas de arquivos em stash)
+
+git stash pop ( volta ultimo arquivo na branch em stash)
+____________________________________________________________________
+---------------------git blame --------------------------------
+git blame (arquivo)  verica autor de cada auteraçao por linha
+
+____________________________________________________________________
+--------------------git chjeryPick  ----------------------------
+
+git chjeryPick (codigo do commit)
+
+aplica auteraçoe de um commit de uma outra branch na brench atual
+
+____________________________________________________________________
