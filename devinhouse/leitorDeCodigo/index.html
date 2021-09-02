@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leitor de Código</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/java.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Leitor de Código!</h1>
+			<h2>Digite o Código de 9 digitos:</h2>
+		</header>
+		<div class="entradaDados">
+			<input id="entradaCodigo" type="text" name="codigo" placeholder="Digite o Código">
+			<button onclick="verCodigo()">Ver Código</button>
+		</div><!--entradaDados-->
+		<div class="saidaProduto">
+			<table border="1" class="tabelaResultado">
+				<tr >
+					<td>Molelo</td>
+					<td id="rModelo"></td>
+				</tr>
+				<tr>
+					<td>Lote</td>
+					<td id="rLote"></td>
+				</tr>
+				<tr>
+					<td>Cor</td>
+					<td id="rCor"></td>
+				</tr>
+				<tr>
+					<td>Voltagem</td>
+					<td id="rVoltagem"></td>
+				</tr>
+			</table>
+		</div><!--saidaProduto-->
+	</div ><!--div_container-->
+
+</body>
+</html>
