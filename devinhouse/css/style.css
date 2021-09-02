@@ -34,3 +34,7 @@ html, body{
 	position: relative;
 	top: 100px;
 }
+
+a.git{
+	border: solid 1px ;
+}
