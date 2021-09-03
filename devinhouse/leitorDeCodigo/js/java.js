@@ -1,3 +1,5 @@
+
+
 function verCodigo(){
 	let codigo = document.getElementById('entradaCodigo').value
 
