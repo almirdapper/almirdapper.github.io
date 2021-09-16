@@ -11,9 +11,9 @@ body, html{
 
 .container{
 	width: 100%;
-	max-width: 850px;
+	max-width: 60%;
 	margin-top: 30px;
-	margin-left: 200px;
+	margin-left: 15%;
 	text-align: center;
 	background-color: #2b2a2a;
 	padding: 30px;
@@ -25,7 +25,7 @@ h1{
 }
 
 .entradaAtividade{
-	width: 500px;
+	width: 65%;
 	height: 30px;
 }
 
@@ -38,13 +38,16 @@ h1{
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
-	margin-left: 150px;
+	margin-left: 20%;
 	margin-top: 30px;
 	text-align: center;	
-	width: 400px;
+	width: 50%;
 	height: 40px;
 	background-color: black;
-	font-size: 30px;
+	font-size: 27px;
+	word-break: break-all;
+	min-height: 40px;
+	height: auto;
 
 }
 
@@ -57,3 +60,12 @@ h1{
 	list-style-type: none;
 }
 
+.classInput{
+	margin-top: 10px;
+}
+
+.classBtn{
+	color: red;
+	width: 20px;
+	font-weight: bold;
+}

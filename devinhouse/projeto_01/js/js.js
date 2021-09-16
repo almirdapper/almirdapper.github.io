@@ -47,7 +47,7 @@
 		let div = document.createElement('div');
 		div.setAttribute('class', 'classDiv');
 		div.setAttribute('id', id + 4);
-		btnExcluir.innerHTML = 'Excluir';	
+		btnExcluir.innerHTML = 'X';	
 
 		div.appendChild(input);
 		div.appendChild(span);		
@@ -57,6 +57,9 @@
 		console.log(li);
 		return li;
 
+		let stor = li;
+		// Transformar o objeto em string e salvar em localStorage
+		localStorage.setItem('stor', JSON.stringify(stor));
 	}
 
 	function marcarAfazer(event){
