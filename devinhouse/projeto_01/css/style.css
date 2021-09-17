@@ -74,14 +74,14 @@ h1{
 
 @media screen and (max-width: 900px){
 	html{
-		width: 100%;
+		width: 500px;
 		height: 300px;
-		max-width: 500px;
+		max-width: 400px;
 	}
 	body{
-		width: 100%;
+		width:  500px;
 		height: 300px;
-		max-width: 500px;
+		max-width: 400px;
 	}
 
 	.container{
