@@ -29,6 +29,7 @@ h1{
 .entradaAtividade{
 	width: 65%;
 	height: 30px;
+	font-size: inherit;
 }
 
 .bAdicionar{
