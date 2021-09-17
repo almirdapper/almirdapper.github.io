@@ -17,6 +17,7 @@ body, html{
 	text-align: center;
 	background-color: #2b2a2a;
 	padding: 30px;
+
 }
 
 h1{
@@ -68,4 +69,36 @@ h1{
 	color: red;
 	width: 20px;
 	font-weight: bold;
+}
+
+@media screen and (max-width: 900px){
+	html{
+		width: 100%;
+		height: 300px;
+	}
+	body{
+		width: 100%;
+		height: 300px;
+
+	}
+
+	.container{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.entradaAtividade{
+		width: 100%;
+		height: 50px;
+		margin-top: -40%;
+	}
+	.classDiv{
+
+		padding: 10px;
+		width: 90%;
+		height: 10px;
+		margin-left: 5px;
+		font-size: 17px;
+		min-height: 30px;
+
+
 }
