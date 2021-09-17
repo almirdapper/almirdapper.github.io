@@ -1,26 +1,33 @@
-		
-	function teste(){
+	//Pega Valor Input e Verifica Se esta Preenchido	
+	function adicionaAfazeres(){
 		let afazer = document.getElementById('inputEntradaID').value;
 		if(afazer.length === 0){
 			alert('Insira Uma descrição para seu Afazer!')
 		}else{
 			 criaLi(afazer);
+			 document.getElementById('inputEntradaID').value ="";
 		}
 	}	
 
 	
-
-	var id = 0;
+		//Variaveis Globais
+	function criaId (valorId){
+		var idCriado = valorId ;
+		return idCriado;
+	}	
+		
 	var listaAfazeres =[];	
+	var idGlobal =0;
+
+
 	function criaLi(afazer){
 		let tarefa = afazer;		
 		let sChecked  ;
 		let nChecked  ;
 		let spanDecor;
-
-
     	
-	
+		let id = criaId(idGlobal);
+
 		let li = document.createElement('li');
 		li.setAttribute('id', id);
 
@@ -56,17 +63,14 @@
 		li.appendChild(div);
 		console.log(li);
 		ulAfazeresID.appendChild(li);
-		let idE = id +4;
+		let idE = id +4;  //adiciona id da dive no array para saber qual elemento excluir
 		listaAfazeres.push({idE,tarefa, sChecked,nChecked,spanDecor});
 		localStorage.setItem("listaAfazeres", JSON.stringify(listaAfazeres));
-		id = id + 5 ;
+		idGlobal = idGlobal + 4;
 
-			
+		alert("Afazer Adicionado!")	
 
 	}
-
-
-
 
 
 	function marcarAfazer(event){
@@ -143,12 +147,20 @@ function caregaStorage(event){
 		 let listaStorage =JSON.parse(localStorage.getItem("listaAfazeres"));			
 
 		 	for (var i = 0; i < listaStorage.length; i++) {
-			let idE =listaStorage[i].idE;
+			//let idE =listaStorage[i].idE;
     		let tarefa = listaStorage[i].tarefa;	
 			let sChecked = listaStorage[i].sChecked ;
 			let nChecked = listaStorage[i].nChecked ;
 			let spanDecor = listaStorage[i].spanDecor;	
-		    
+
+
+
+		//let tarefa = afazer;		
+		//let sChecked  ;
+		//let nChecked  ;
+		//let spanDecor;
+    	
+		let id = criaId(idGlobal);
 
 		let li = document.createElement('li');
 		li.setAttribute('id', id);
@@ -185,11 +197,18 @@ function caregaStorage(event){
 		li.appendChild(div);
 		console.log(li);
 		ulAfazeresID.appendChild(li);
-		//let idE = id +4;
+		let idE = id +4;  //adiciona id da dive no array para saber qual elemento excluir
 		listaAfazeres.push({idE,tarefa, sChecked,nChecked,spanDecor});
 		localStorage.setItem("listaAfazeres", JSON.stringify(listaAfazeres));
-		id = id + 5 ;
-		}
-	}
+		idGlobal = idGlobal + 4;
 
+
+	}
+}
 	window.onload = caregaStorage;
+
+	document.addEventListener('keypress', function(e){
+       if(e.which == 13){
+          adicionaAfazeres();
+       }
+    }, false);
