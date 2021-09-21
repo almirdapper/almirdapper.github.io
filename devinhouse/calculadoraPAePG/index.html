@@ -5,17 +5,18 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/js.js"></script>
+
 </head>
 <body>
 
-	<div class="container"
+	<div class="container">
 		<h1>Calculadora P.A e P.G</h1>
 		<label>Valor Inicial</label>
-		<input type="number" name="valorInicial">
+		<input  type="number" name="valorInicial" id="idValor">
 		<label>Raiz</label>
-		<input type="text" name="resultado">
-		<button>Calcular P.A</button>
-		<button>Calcular P.G</button>
+		<input type="text" name="resultado" id="idRaiz">
+		<button id="bPA" onclick="pegar(this.id)">Calcular P.A </button>
+		<button id="bPG" onclick="pegar(this.id)">Calcular P.G</button>
 	</div>
 
 </body>
