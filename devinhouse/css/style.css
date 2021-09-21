@@ -5,12 +5,13 @@
 
 html, body{
 	height: 100%;
+	background-color: black;
 }
 
 .container{
 	width: 100%;
-	max-height: 1800px;
 	background-color: black;
+	margin-bottom: 30px;
 }
 
 .descricao{
@@ -27,6 +28,7 @@ html, body{
 	color: white;
 	display: block;
 	margin: 50px;
+
 }
 
 .descricao h1{
