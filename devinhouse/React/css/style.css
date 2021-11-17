@@ -1,26 +1,27 @@
-* {
+*{
 	padding: 0;
 	margin: 0;
 }
 
-html,
-body {
+html, body{
 	height: 100%;
+	
 }
-.container {
+.container{
 	width: 100%;
 	height: 100%;
 	background-color: black;
 }
 
-.descricao {
+.descricao{
 	width: 100%;
 	height: 637px;
 	color: white;
 	text-align: center;
+
 }
 
-.descricao a {
+.descricao a{
 	position: relative;
 	top: 100px;
 	text-decoration: none;
@@ -29,7 +30,8 @@ body {
 	margin: 50px;
 }
 
-.descricao h1 {
+.descricao h1{
 	position: relative;
 	top: 100px;
 }
+
