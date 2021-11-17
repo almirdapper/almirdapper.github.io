@@ -24,4 +24,3 @@ Seu comportamento é igual ao da variável “var” quando ela for declarada fo
 1. **Atributos:** *São propriedades semelhantes que os objetos de uma classe possuem. O "João da Silva" além do nome, também é caracterizado por outros atributos, endereço, número do contribuinte, CPF, etc. Cada atributo permite definir um intervalo de valores que as instâncias dessa propriedade podem apresentar.*
 
 2. **Metodos:** *Os métodos determinam o comportamento dos objetos de uma classe e são análogos às funções ou procedimentos da programação estruturada. O envio de mensagens (chamada de métodos) pode alterar o estado de um objeto. Em linguagens baseadas em classe eles são definidos na classe.*
-
