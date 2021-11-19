@@ -5,9 +5,10 @@ import Login from "./pages/login";
 class App extends React.Component {
 	render() {
 		return (
-			<>
+			<div>
 				<Routes />
-			</>
+				teste
+			</div>
 		);
 	}
 }
