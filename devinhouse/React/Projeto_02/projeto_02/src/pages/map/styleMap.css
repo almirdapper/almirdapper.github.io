@@ -1,0 +1,32 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.ContainerMap {
+	background-color: black;
+	width: 100%;
+	height: 680px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.maps {
+	width: 98%;
+	height: 85%;
+	position: relative;
+}
+
+.classButtonMaps {
+	width: 15%;
+}
+
+.classButtonMapsSair {
+	background-color: red;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import CompanyRegistationC from "../../components/companyRegistation";
 import "./styleCompany.css";
-
+import { Link } from "react-router-dom";
 class CompanyRegistation extends React.Component {
 	render() {
 		return (
@@ -11,8 +11,13 @@ class CompanyRegistation extends React.Component {
 					<div className="classCompany">
 						<ul className="classUl">
 							<h1>Nova Empresa</h1>
-							<button className="classBtnSubmit">Cadastrar</button>
-							<button className="classBtnCancel">Cancelar</button>
+							<Link to="/Map">
+								<button className="classBtnCadastrar">Cadastrar</button>
+							</Link>
+
+							<Link to="/">
+								<button className="classBtnCancelar">Cancelar</button>
+							</Link>
 							<CompanyRegistationC
 								typeDescricao="Razão Social "
 								typeInput="text"

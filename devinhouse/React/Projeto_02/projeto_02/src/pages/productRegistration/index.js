@@ -1,6 +1,7 @@
 import React from "react";
 import ProductRegistationC from "../../components/productRegistration";
 import "./styleProduct.css";
+import { Link } from "react-router-dom";
 
 class ProductRegistation extends React.Component {
 	render() {
@@ -10,9 +11,13 @@ class ProductRegistation extends React.Component {
 					<div className="productContainer">
 						<ul>
 							<h1>Novo Produto</h1>
-							<button className="classBtnCadastrar">Cadastrar</button>
-							<button className="classBtnCancelar">Cancelar</button>
-							<img src="../../img/produto.png" />
+							<Link to="/Map">
+								<button className="classBtnCadastrar">Cadastrar</button>
+							</Link>
+
+							<Link to="/">
+								<button className="classBtnCancelar">Cancelar</button>
+							</Link>
 
 							<ProductRegistationC descricao="URL da imagem" typeInput="text" />
 							<ProductRegistationC

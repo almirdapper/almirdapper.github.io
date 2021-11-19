@@ -1,41 +1,32 @@
-import { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
+
 import Login from "./pages/login";
-import Product from "./pages/product";
-import Company from "./pages/company";
+import CompanyRegistation from "./pages/companyRegistation";
 import Map from "./pages/map";
-
-class Routes extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
-
+import ProducttTegistration from "./pages/productRegistration";
+class Rotas extends React.Component {
 	render() {
 		return (
-			<>
-				<Router>
-					<Switch>
-						<Route exact patch="/">
-							<Login />
-						</Route>
+			<Routes>
+				<Route exact path="/" component={Login}></Route>
 
-						<Route exact patch="/product">
-							<Product />
-						</Route>
+				<Route exact path="/Map" component={Map}></Route>
 
-						<Route exact patch="/company">
-							<Company />
-						</Route>
+				<Route
+					exact
+					path="/CompanyRegistation"
+					component={CompanyRegistation}
+				></Route>
 
-						<Route exact patch="/map">
-							<Map />
-						</Route>
-					</Switch>
-				</Router>
-			</>
+				<Route
+					exact
+					path="/ProducttTegistration"
+					component={ProducttTegistration}
+				></Route>
+			</Routes>
 		);
 	}
 }
 
-export default Routes;
+export default Rotas;

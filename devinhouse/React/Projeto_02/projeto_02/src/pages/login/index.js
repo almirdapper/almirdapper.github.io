@@ -1,25 +1,10 @@
 import React from "react";
 import LoginC from "../../components/login";
+import "./styleLogin.css";
 
 import { Link } from "react-router-dom";
 
 class Login extends React.Component {
-	/*constructor(props) {
-		super(props);
-		this.state = {
-			loading: true,
-			acesso: [],
-		};
-	}
-
-	componentDidMount() {
-		setTimeout(() =>{
-			this.setState({loading:false,
-			})
-		},3000)
-
-	}*/
-
 	render() {
 		return (
 			<>
@@ -30,7 +15,7 @@ class Login extends React.Component {
 
 						<LoginC descricaoInput="Senha" typeInput="password" />
 					</ul>
-					<Link to="/product">
+					<Link to="/Map">
 						<button>Sing In</button>
 					</Link>
 				</div>
