@@ -1,8 +1,8 @@
 {
 	"name": "projeto_02",
 	"version": "0.1.0",
+	"homepage": "./",
 	"private": true,
-	"homepage": ".",
 	"dependencies": {
 		"@react-google-maps/api": "^2.7.0",
 		"@testing-library/jest-dom": "^5.15.0",
@@ -19,7 +19,8 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"deploy": "serve -s build"
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
 		"extends": [
