@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Desenvolvedor Júnior",
+        "period": "2020 - 2021",
+        "description": "Início da carreira como desenvolvedor, trabalhando com tecnologias web básicas como HTML, CSS e JavaScript. Participei de projetos de pequeno porte e aprendi as melhores práticas de desenvolvimento."
+    },
+    {
+        "title": "Desenvolvedor Pleno",
+        "period": "2021 - 2023",
+        "description": "Evolução para desenvolvedor pleno, assumindo responsabilidades maiores em projetos de médio porte. Trabalhei com frameworks modernos como React e Vue.js, além de desenvolver APIs REST com Node.js."
+    },
+    {
+        "title": "Desenvolvedor Sênior",
+        "period": "2023 - Presente",
+        "description": "Atualmente atuo como desenvolvedor sênior, liderando equipes de desenvolvimento e arquitetando soluções complexas. Especializado em desenvolvimento full-stack com foco em performance e escalabilidade."
+    },
+    {
+        "title": "Freelancer",
+        "period": "2022 - Presente",
+        "description": "Paralelamente ao trabalho CLT, atuo como freelancer desenvolvendo projetos personalizados para clientes diversos. Experiência em e-commerce, landing pages, sistemas web e aplicações mobile."
+    }
+]
+

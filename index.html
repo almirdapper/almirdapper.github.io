@@ -1,26 +1,392 @@
-	<!DOCTYPE html>
-	<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="Descrition" content="Descrição do Site">
-		<meta name="author" content="Almir Dapper">
-		<meta name="keywords" content="palavras, chave, com, virgula">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-		<title>Almir Dapper</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-	<body>
-		<div class="container">
-			<div class="descricao">
-				<h1>Almir Dapper </h1>
-				<a href="projetos/projetos.html" target="_blank">Projetos</a>
-				<a href="devinhouse/index.html">Devinhouse</a>
-			</div>
-		</div>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Meu Portfólio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#career">Minha Carreira</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	</body>
+    <main>
+        <section id="home" class="hero">
+            <h1>Almir Dapper</h1>
+            <p class="tagline">Engenheiro de Dados | Analista de Dados | Python | Ciência de Dados | Desenvolvimento de
+                Software</p>
+            <div class="navigation-buttons">
+                <a href="#about" class="btn">Sobre Mim</a>
+                <a href="#career" class="btn">Minha Carreira</a>
+                <a href="#projects" class="btn">Projetos</a>
+                <a href="#formacao" class="btn">Formação</a>
+                <a href="#cursos" class="btn">Cursos</a>
+                <a href="#contact" class="btn">Contato</a>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <img src="assets/img/profile-placeholder.jpg" alt="Foto de Perfil" class="profile-photo">
+                <p>Olá! Sou <strong>Almir R. Dapper</strong>, engenheiro de dados e desenvolvedor de software com
+                    experiência em <strong>Python, SQL, PostgreSQL, MongoDB</strong> e soluções em nuvem
+                    (<strong>GCP</strong> e <strong>OCI</strong>). Minha jornada começou na área de infraestrutura e
+                    suporte, evoluindo para análise e engenharia de dados, sempre com foco em transformar informações em
+                    insights estratégicos.</p>
+                <p>Atualmente atuo na <strong>Dígitro Tecnologia</strong>, onde desenvolvo pipelines de dados,
+                    integrações e relatórios em ambientes de grande escala. Tenho vivência em <strong>ETL, modelagem de
+                        dados, BI (Power BI, Qlik Sense)</strong> e orquestração de processos com <strong>Apache
+                        Airflow</strong>. </p>
+                <p>Sou graduado em <strong>Sistemas de Informação</strong> (UNISUL) e pós-graduado em <strong>Big Data e
+                        Ciência de Dados</strong> (Facuminas), além de possuir certificações e cursos em bancos de
+                    dados, programação e nuvem.</p>
+                <p>Acredito que a tecnologia tem o poder de transformar negócios e pessoas. Sou curioso, proativo e
+                    apaixonado por aprender e compartilhar conhecimento. Fora do trabalho, gosto de explorar novas
+                    tecnologias e aproveitar o tempo com minha família.</p>
+            </div>
+        </section>
+        <section id="career" class="section">
+            <h2>Minha Carreira</h2>
+            <div id="career-timeline" class="timeline">
 
-	</html>
+                <!-- Dígitro Tecnologia -->
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <!-- <img src="assets/images/logos/digitro.png" alt="Dígitro Tecnologia" class="company-logo"> -->
+                        <h3>Engenheiro de Dados – Dígitro Tecnologia</h3>
+                        <p><strong>dez de 2022 - o momento · 2 anos 10 meses</strong></p>
+                        <p>Florianópolis, Santa Catarina, Brasil · Híbrida</p>
+                        <p>Funções: Engenheiro de dados | Analista de Dados | Python | Ciências de Dados |
+                            Desenvolvimento</p>
+                        <ul>
+                            <li>Coleta, processamento, limpeza e interpretação de dados</li>
+                            <li>Modelagem de dados e Data Warehouse</li>
+                            <li>Extração e manipulação de dados</li>
+                            <li>Instruções SQL e desenvolvimento de scripts/procedures PL/SQL</li>
+                            <li>Arquitetura de bancos de dados, backup e recuperação</li>
+                            <li>ETL com Pentaho, Qlik Sense, Power BI</li>
+                            <li>Python, Jupyter Notebook, Git, Apache Airflow</li>
+                            <li>PostgreSQL, MySQL, Oracle, MongoDB</li>
+                        </ul>
+                        <p>Competências: Ciência da computação, Análise de dados, ETL, Visualização de dados, Modelagem
+                            de dados, Desenvolvimento de software, Python, Node.js, JavaScript, MongoDB, Qlik Sense,
+                            Power BI, entre outras.</p>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+
+                <!-- Floripa Harley Davidson -->
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <!-- <img alt="Floripa Harley Davidson" class="company-logo"> -->
+                        <h3>Gerente de TI – Floripa Harley Davidson</h3>
+                        <p><strong>dez de 2021 - dez de 2022 · 1 ano 1 mês</strong></p>
+                        <p>Florianópolis, Santa Catarina, Brasil · Presencial</p>
+                        <p>Gerenciamento de atividades de TI, elaboração de projetos, implantação e integração de
+                            sistemas.</p>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+
+                <!-- Hit Honda -->
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <!-- <img src="assets/images/logos/hit-honda.png" alt="Hit Honda" class="company-logo"> -->
+                        <h3>Técnico em Sistemas de Informática – Hit Honda</h3>
+                        <p><strong>jul de 2020 - dez de 2022 · 2 anos 6 meses</strong></p>
+                        <p>Florianópolis, Santa Catarina, Brasil</p>
+                        <ul>
+                            <li>Configuração de hardware e softwares</li>
+                            <li>Manutenção de equipamentos e redes LAN/WAN</li>
+                            <li>Gerenciamento de segurança e softwares</li>
+                            <li>Atualização e diagnóstico de sistemas</li>
+                            <li>Suporte técnico e treinamento de usuários</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+
+                <!-- Hai Toyota -->
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <!-- <img src="assets/images/logos/hai-toyota.png" alt="Hai Toyota" class="company-logo"> -->
+                        <h3>Técnico em Informática – Hai Toyota</h3>
+                        <p><strong>jul de 2017 - jul de 2020 · 3 anos 1 mês</strong></p>
+                        <p>Florianópolis e Região, Brasil</p>
+                        <ul>
+                            <li>Suporte à infraestrutura da empresa e usuários</li>
+                            <li>Cabeamento e redes TCP/IP</li>
+                            <li>Configuração de sistemas Windows e Linux</li>
+                            <li>Manutenção de sistemas Linx e e-mail</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+
+                <!-- Grupo Reunidas -->
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <!-- <img src="assets/images/logos/reunidas.png" alt="Grupo Reunidas" class="company-logo"> -->
+                        <h3>Suporte Técnico – Grupo Reunidas</h3>
+                        <p><strong>jan de 2016 - jul de 2017 · 1 ano 7 meses</strong></p>
+                        <p>Florianópolis, Santa Catarina</p>
+                        <ul>
+                            <li>Instalação de sistemas Windows e redes TCP/IP</li>
+                            <li>Documentação de rotinas e projetos</li>
+                            <li>Consultas em bancos e controle de segurança</li>
+                            <li>Suporte técnico e treinamentos aos usuários</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+
+                <!-- Ommega Data Sistemas -->
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <!-- <img src="assets/images/logos/ommega.png" alt="Ommega Data Sistemas" class="company-logo"> -->
+                        <h3>Suporte Técnico – Ommega Data Sistemas</h3>
+                        <p><strong>jan de 2014 - dez de 2015 · 2 anos</strong></p>
+                        <p>Caçador SC</p>
+                        <ul>
+                            <li>Instalação e manutenção de sistemas</li>
+                            <li>Identificação e resolução de problemas de software</li>
+                            <li>Consultas e modificações em bancos de dados</li>
+                            <li>Treinamento de usuários e clientes</li>
+                            <li>Configuração de sistemas operacionais e redes TCP/IP</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <h2>Meus Projetos</h2>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Projetos serão carregados via JavaScript da API do GitHub -->
+            </div>
+        </section>
+        <section id="formacao" class="section">
+            <h2>Formação</h2>
+            <div class="education-grid">
+
+                <!-- Graduação -->
+                <div class="education-item">
+                    <h3>Graduação</h3>
+                    <p><strong>Sistemas de Informação – UNISUL</strong></p>
+                    <img src="assets/img/certificado-graduacao.jpg" alt="Certificado Graduação" class="certificate-img">
+                </div>
+
+                <!-- Pós-graduação -->
+                <div class="education-item">
+                    <h3>Pós-graduação</h3>
+                    <p><strong>Big Data e Ciência de Dados</strong></p>
+                    <img src="assets/img/certificado-pos.jpg" alt="Certificado Pós-graduação" class="certificate-img">
+                </div>
+
+            </div>
+        </section>
+        <!-- <section id="education" class="section">
+            <h2>Certificados & Cursos</h2>
+            <div class="education-grid">
+
+                <div class="education-item">
+                    <h3>Cursos & Certificações</h3>
+                    <p>Lista completa de cursos, treinamentos e certificações em tecnologia, dados e desenvolvimento.
+                    </p>
+                    <div class="certificates">
+                        <img src="assets/img/almir_bigdata.jpg" alt="Certificado Big Data" class="certificate-img">
+                        <img src="assets/img/cgp_provisionamento_usuarios.jpg" alt="CGP Provisionamento Usuários"
+                            class="certificate-img">
+                        <img src="assets/img/dwx_20032025.jpg" alt="DWX 20032025" class="certificate-img">
+                        <img src="assets/img/gcp_gestao_identidade.jpg" alt="GCP Gestão de Identidade e Segurança"
+                            class="certificate-img">
+                        <img src="assets/img/introducao_gcp.jpg" alt="Introdução GCP" class="certificate-img">
+                        <img src="assets/img/redis_almir.jpg" alt="Curso Redis" class="certificate-img">
+                        <img src="assets/img/python_basico.jpg" alt="Python Básico" class="certificate-img">
+                        <img src="assets/img/python_avancado.jpg" alt="Python Avançado" class="certificate-img">
+                        <img src="assets/img/pentaho_olap.jpg" alt="Pentaho OLAP" class="certificate-img">
+                        <img src="assets/img/qlik_sense.jpg" alt="Qlik Sense" class="certificate-img">
+                        <img src="assets/img/apache_airflow.jpg" alt="Apache Airflow" class="certificate-img">
+                        <img src="assets/img/postgresql.jpg" alt="PostgreSQL" class="certificate-img">
+                        <img src="assets/img/linux_lpi.jpg" alt="Linux LPI Essentials" class="certificate-img">
+                        <img src="assets/img/docker.jpg" alt="Docker" class="certificate-img">
+                        <!-- Adicione mais imagens aqui, seguindo o mesmo padrão -->
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+                <section id="cursos" class="section">
+            <h2>Certificados & Cursos</h2>
+            <div class="education-grid">
+
+                <!-- Google Cloud Platform (GCP) -->
+                <div class="education-item">
+                    <h3>Google Cloud Platform (GCP)</h3>
+                    <p>Certificações em Google Cloud Platform, incluindo gestão de identidade, segurança, recursos e provisionamento de usuários.</p>
+                    <div class="certificates">
+                        <img src="assets/img/1_CGP_Provisionamento_usuarios_identity.jpg" alt="CGP Provisionamento Usuários Identity" class="certificate-img">
+                        <img src="assets/img/2_GCP_Gestao_de_identidade_e_Seguranca.jpg" alt="GCP Gestão de Identidade e Segurança" class="certificate-img">
+                        <img src="assets/img/3_GCP_Gestao_de_Recursos.jpg" alt="GCP Gestão de Recursos" class="certificate-img">
+                        <img src="assets/img/4_GCP_hands_provisionando_usuarios.jpg" alt="GCP Hands-on Provisionando Usuários" class="certificate-img">
+                        <img src="assets/img/5_GCP_introducao.jpg" alt="GCP Introdução" class="certificate-img">
+                        <img src="assets/img/6_Introducao_a_nuvem.jpg" alt="Introdução à Nuvem" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="education-item">
+                    <h3>Python</h3>
+                    <p>Cursos completos de Python, desde conceitos básicos até avançados, incluindo orientação a objetos, Selenium e manipulação de arquivos.</p>
+                    <div class="certificates">
+                        <img src="assets/img/9_PYTHON_Apredendendo_PYTHON.jpg" alt="Python - Aprendendo Python" class="certificate-img">
+                        <img src="assets/img/10_PYTHON_SELENIUM.jpg" alt="Python Selenium" class="certificate-img">
+                        <img src="assets/img/11_PYTHON_Lendo_escrevendo_arquivos.jpg" alt="Python - Lendo e Escrevendo Arquivos" class="certificate-img">
+                        <img src="assets/img/12_PYTHON_Orientado_a_objetos.jpg" alt="Python Orientado a Objetos" class="certificate-img">
+                        <img src="assets/img/13_PYTHON_Conceitos_intermediarios.jpg" alt="Python Conceitos Intermediários" class="certificate-img">
+                        <img src="assets/img/39_PYTHON.jpg" alt="Python" class="certificate-img">
+                        <img src="assets/img/40_PYTHON.jpg" alt="Python Avançado" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- Java -->
+                <div class="education-item">
+                    <h3>Java</h3>
+                    <p>Certificações em Java, incluindo Maven, orientação a objetos, listas e desenvolvimento Java completo.</p>
+                    <div class="certificates">
+                        <img src="assets/img/28_JAVA_MAVEN.jpg" alt="Java Maven" class="certificate-img">
+                        <img src="assets/img/29_JAVA.jpg" alt="Java" class="certificate-img">
+                        <img src="assets/img/30_JAVA_OOB.jpg" alt="Java Orientação a Objetos" class="certificate-img">
+                        <img src="assets/img/31_JAVA_LISTAS.jpg" alt="Java Listas" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="education-item">
+                    <h3>JavaScript</h3>
+                    <p>Cursos de JavaScript para desenvolvimento web e programação front-end.</p>
+                    <div class="certificates">
+                        <img src="assets/img/32_JAVA_SCRIPT.jpg" alt="JavaScript" class="certificate-img">
+                        <img src="assets/img/37_JAVA_SCRIPT.jpg" alt="JavaScript Avançado" class="certificate-img">
+                        <img src="assets/img/41_JAVA_SCRIPT.jpg" alt="JavaScript Completo" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- Node.js -->
+                <div class="education-item">
+                    <h3>Node.js</h3>
+                    <p>Certificações em Node.js para desenvolvimento backend e aplicações JavaScript server-side.</p>
+                    <div class="certificates">
+                        <img src="assets/img/42_NODE_JS.jpg" alt="Node.js" class="certificate-img">
+                        <img src="assets/img/43_NODE_JS.jpg" alt="Node.js Avançado" class="certificate-img">
+                        <img src="assets/img/45_NODE_JS.jpg" alt="Node.js Completo" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- Linux -->
+                <div class="education-item">
+                    <h3>Linux</h3>
+                    <p>Certificações em sistemas Linux, administração e comandos essenciais.</p>
+                    <div class="certificates">
+                        <img src="assets/img/27_LINUX.jpg" alt="Linux" class="certificate-img">
+                        <img src="assets/img/34_LINUX.jpg" alt="Linux Avançado" class="certificate-img">
+                        <img src="assets/img/36_LINUX.jpg" alt="Linux Administração" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- Business Intelligence & Analytics -->
+                <div class="education-item">
+                    <h3>Business Intelligence & Analytics</h3>
+                    <p>Certificações em Business Intelligence, Pentaho, Qlik Sense e análise de dados.</p>
+                    <div class="certificates">
+                        <img src="assets/img/15_Business_Intelligence_trabalhando_Warehouse.jpg" alt="Business Intelligence - Data Warehouse" class="certificate-img">
+                        <img src="assets/img/16_PENTAHO_MDX.jpg" alt="Pentaho MDX" class="certificate-img">
+                        <img src="assets/img/17_PENTAHO_Relatorios.jpg" alt="Pentaho Relatórios" class="certificate-img">
+                        <img src="assets/img/18_PENTAHO_Analise_de_dados.jpg" alt="Pentaho Análise de Dados" class="certificate-img">
+                        <img src="assets/img/19_QLIK_Manipulando_dados.jpg" alt="Qlik - Manipulando Dados" class="certificate-img">
+                        <img src="assets/img/21_QLICK_Conexoes_sql.jpg" alt="Qlik Conexões SQL" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- Banco de Dados -->
+                <div class="education-item">
+                    <h3>Banco de Dados</h3>
+                    <p>Certificações em bancos de dados relacionais e NoSQL, incluindo PostgreSQL, MongoDB e Redis.</p>
+                    <div class="certificates">
+                        <img src="assets/img/26_POSTGRES.jpg" alt="PostgreSQL" class="certificate-img">
+                        <img src="assets/img/24_MONGO_DB.jpg" alt="MongoDB" class="certificate-img">
+                        <img src="assets/img/7_REDIS_Armazenamento_de_chaves.jpg" alt="Redis - Armazenamento de Chaves" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- DevOps & Ferramentas -->
+                <div class="education-item">
+                    <h3>DevOps & Ferramentas</h3>
+                    <p>Certificações em ferramentas DevOps, controle de versão e orquestração de dados.</p>
+                    <div class="certificates">
+                        <img src="assets/img/20_GIT_GITHUB.jpg" alt="Git & GitHub" class="certificate-img">
+                        <img src="assets/img/22_APACHE_AIRFLOW.jpg" alt="Apache Airflow" class="certificate-img">
+                        <img src="assets/img/23_APACHE_AIRFLOW.jpg" alt="Apache Airflow Avançado" class="certificate-img">
+                        <img src="assets/img/44_SHEL_SCRIPT.jpg" alt="Shell Script" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- Redes & Protocolos -->
+                <div class="education-item">
+                    <h3>Redes & Protocolos</h3>
+                    <p>Certificações em redes de computadores e protocolos de comunicação.</p>
+                    <div class="certificates">
+                        <img src="assets/img/33_REDES.jpg" alt="Redes" class="certificate-img">
+                        <img src="assets/img/38_REDES.jpg" alt="Redes Avançado" class="certificate-img">
+                        <img src="assets/img/25_HTTP_por_baixo.jpg" alt="HTTP por Baixo dos Panos" class="certificate-img">
+                    </div>
+                </div>
+
+                <!-- Inteligência Artificial & Programação -->
+                <div class="education-item">
+                    <h3>Inteligência Artificial & Programação</h3>
+                    <p>Certificações em Inteligência Artificial e lógica de programação.</p>
+                    <div class="certificates">
+                        <img src="assets/img/14_IA_introducao.jpg" alt="Introdução à IA" class="certificate-img">
+                        <img src="assets/img/8_Logica_de_Programacao.jpg" alt="Lógica de Programação" class="certificate-img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="section">
+            <h2>Contato</h2>
+            <div class="contact-links">
+                <a href="https://github.com/almirdapper" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/almirdapper" target="_blank">LinkedIn</a>
+                <a href="mailto:almirdapper@hotmail.com">Email</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Almir Dapper. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
